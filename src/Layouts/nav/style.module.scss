@@ -5,6 +5,10 @@
   padding: 1rem 3rem;
   color: black !important;
   border-bottom: 2px solid black;
+  width: 100%;
+  position: fixed;
+  background-color: white;
+  z-index: 99;
 
   .logo {
     width: 125px;

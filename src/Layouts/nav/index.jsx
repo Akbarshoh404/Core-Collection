@@ -13,8 +13,8 @@ function Navbar() {
       <div className={styles.navLinks}>
         <a href="#home">HOME</a>
         <a href="#services">CLOTHES</a>
-        <a href="#about">ABOUT</a>
-        <a href="#contact">CONTACT</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
       </div>
 
       <img src={logo} alt="logo" className={styles.logo} />
