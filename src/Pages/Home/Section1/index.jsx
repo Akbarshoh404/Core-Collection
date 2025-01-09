@@ -6,7 +6,14 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 import styles from "./style.module.scss";
-import img from "../../../Components/Images/shop1.png";
+
+import img1 from "../../../Components/Images/HighLight1.png";
+import img2 from "../../../Components/Images/HighLight2.png";
+import img3 from "../../../Components/Images/HighLight3.png";
+import img4 from "../../../Components/Images/HighLight4.png";
+import img5 from "../../../Components/Images/HighLight5.png";
+import img6 from "../../../Components/Images/HighLight6.png";
+import img7 from "../../../Components/Images/HighLight7.png";
 
 const Section1 = () => {
   const swiperRef = useRef(null);
@@ -26,7 +33,7 @@ const Section1 = () => {
             grabCursor={true}
             centeredSlides={true}
             loop={true}
-            slidesPerView={3}
+            slidesPerView={2.75}
             coverflowEffect={{
               rotate: 0,
               stretch: -75,
@@ -42,34 +49,143 @@ const Section1 = () => {
             }}
           >
             <SwiperSlide>
-              <img src={img} alt="highlight1" />
+              <div className={styles.slide}>
+                <img src={img1} alt="highlight1" />
+                <div className={styles.slide_texts}>
+                  <div className={styles.slide_text}>
+                    <p className={styles.slide_text1}>DRESS</p>
+                    <p className={styles.slide_text2}>272 000 SUM</p>
+                  </div>
+                  <div className={styles.slide_text}>
+                    <p className={styles.slide_text1}>SWEATER</p>
+                    <p className={styles.slide_text2}>228 000 SUM</p>
+                  </div>
+                  <div className={styles.slide_text}>
+                    <p className={styles.slide_text1}>CARDIGAN</p>
+                    <p className={styles.slide_text2}>216 000 SUM</p>
+                  </div>
+                  <div className={styles.slide_text}>
+                    <p className={styles.slide_text1}>SKIRT</p>
+                    <p className={styles.slide_text2}>203 000 SUM</p>
+                  </div>
+                </div>
+              </div>
             </SwiperSlide>
             <SwiperSlide>
-              <img src={img} alt="highlight2" />
+              <div className={styles.slide}>
+                <img src={img2} alt="highlight2" />
+                <div className={styles.slide_texts}>
+                  <div className={styles.slide_text}>
+                    <p className={styles.slide_text1}>BLACK HANDBAG</p>
+                    <p className={styles.slide_text2}>261 000 SUM</p>
+                  </div>
+                  <div className={styles.slide_text}>
+                    <p className={styles.slide_text1}>HANDBAG WITH STRAP</p>
+                    <p className={styles.slide_text2}>296 000 SUM</p>
+                  </div>
+                  <div className={styles.slide_text}>
+                    <p className={styles.slide_text1}>ROUND HANDBAG</p>
+                    <p className={styles.slide_text2}>234 000 SUM</p>
+                  </div>
+                  <div className={styles.slide_text}>
+                    <p className={styles.slide_text1}>
+                      HANDBAG WITHOUT DECORATIONS
+                    </p>
+                    <p className={styles.slide_text2}>179 000 SUM</p>
+                  </div>
+                  <div className={styles.slide_text}>
+                    <p className={styles.slide_text1}>HANDBAG WITH A LOCK</p>
+                    <p className={styles.slide_text2}>246 000 SUM</p>
+                  </div>
+                </div>
+              </div>
             </SwiperSlide>
             <SwiperSlide>
-              <img src={img} alt="highlight3" />
+              <div className={styles.slide}>
+                <img src={img3} alt="highlight3" />
+                <div className={styles.slide_texts}>
+                  <div className={styles.slide_text}>
+                    <p className={styles.slide_text1}>COAT</p>
+                    <p className={styles.slide_text2}>624 000 SUM</p>
+                  </div>
+                  <div className={styles.slide_text}>
+                    <p className={styles.slide_text1}>CARDIGAN</p>
+                    <p className={styles.slide_text2}>365 000 SUM</p>
+                  </div>
+                  <div className={styles.slide_text}>
+                    <p className={styles.slide_text1}>DRESS</p>
+                    <p className={styles.slide_text2}>285 000 SUM</p>
+                  </div>
+                </div>
+              </div>
             </SwiperSlide>
             <SwiperSlide>
-              <img src={img} alt="highlight4" />
+              <div className={styles.slide}>
+                <img src={img4} alt="highlight4" />
+                <div className={styles.slide_texts}>
+                  <div className={styles.slide_text}>
+                    <p className={styles.slide_text1}>ANKLE BOOTS</p>
+                    <p className={styles.slide_text2}>513 000 SUM</p>
+                  </div>
+                </div>
+              </div>
             </SwiperSlide>
             <SwiperSlide>
-              <img src={img} alt="highlight5" />
+              <div className={styles.slide}>
+                <img src={img5} alt="highlight5" />
+                <div className={styles.slide_texts}>
+                  <div className={styles.slide_text}>
+                    <p className={styles.slide_text1}>SNEAKERS</p>
+                    <p className={styles.slide_text2}>203 000 SUM</p>
+                  </div>
+                </div>
+              </div>
             </SwiperSlide>
             <SwiperSlide>
-              <img src={img} alt="highlight6" />
+              <div className={styles.slide}>
+                <img src={img6} alt="highlight6" />
+                <div className={styles.slide_texts}>
+                  <div className={styles.slide_text}>
+                    <p className={styles.slide_text1}>1ST BAG MODEL</p>
+                    <p className={styles.slide_text2}>247 000 SUM</p>
+                  </div>
+                  <div className={styles.slide_text}>
+                    <p className={styles.slide_text1}>2ND BAG MODEL</p>
+                    <p className={styles.slide_text2}>283 000 SUM</p>
+                  </div>
+                  <div className={styles.slide_text}>
+                    <p className={styles.slide_text1}>3RD BAG MODEL</p>
+                    <p className={styles.slide_text2}>254 000 SUM</p>
+                  </div>
+                  <div className={styles.slide_text}>
+                    <p className={styles.slide_text1}>4TH BAG MODEL</p>
+                    <p className={styles.slide_text2}>247 000 SUM</p>
+                  </div>
+                </div>
+              </div>
             </SwiperSlide>
             <SwiperSlide>
-              <img src={img} alt="highlight7" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={img} alt="highlight8" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={img} alt="highlight9" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={img} alt="highlight10" />
+              <div className={styles.slide}>
+                <img src={img7} alt="highlight7" />
+                <div className={styles.slide_texts}>
+                  <div className={styles.slide_text}>
+                    <p className={styles.slide_text1}>CARDIGAN</p>
+                    <p className={styles.slide_text2}>203 000 SUM</p>
+                  </div>
+                  <div className={styles.slide_text}>
+                    <p className={styles.slide_text1}>TUTU SKIRT</p>
+                    <p className={styles.slide_text2}>203 000 SUM</p>
+                  </div>
+                  <div className={styles.slide_text}>
+                    <p className={styles.slide_text1}>SWEATER</p>
+                    <p className={styles.slide_text2}>155 000 SUM</p>
+                  </div>
+                  <div className={styles.slide_text}>
+                    <p className={styles.slide_text1}>SKIRT</p>
+                    <p className={styles.slide_text2}>241 000 SUM</p>
+                  </div>
+                </div>
+              </div>
             </SwiperSlide>
           </Swiper>
 
@@ -78,13 +194,13 @@ const Section1 = () => {
               className={`${styles.swiper_button_prev} swiper-button-prev`}
               onClick={() => swiperRef.current.swiper.slidePrev()}
             >
-              <ArrowLeft size={40} color="black" />{" "}
+              <ArrowLeft size={40} color="black" />
             </div>
             <div
               className={`${styles.swiper_button_next} swiper-button-next`}
               onClick={() => swiperRef.current.swiper.slideNext()}
             >
-              <ArrowRight size={40} color="black" />{" "}
+              <ArrowRight size={40} color="black" />
             </div>
           </div>
         </div>

@@ -2,8 +2,8 @@
   width: 100%;
   height: 100vh;
   display: flex;
-  justify-content: center; // Center the entire section horizontally
-  align-items: center; // Center the entire section vertically
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
@@ -23,28 +23,29 @@
   text-align: center;
 }
 
-// Slider container
+// Slider
+
 .slider_container {
-  width: 100%; // Make the container take up full width
-  max-width: 1200px; // Optional: Set a maximum width for the carousel
+  width: 100%;
+  max-width: 1200px;
   margin: auto;
   position: relative;
 
   .swiper-wrapper {
     display: flex;
-    justify-content: center; // Center the slides inside the wrapper
+    justify-content: center;
   }
 
   .swiper-slide {
     display: flex;
-    justify-content: center; // Center the content inside each slide
-    align-items: center; // Center the images vertically within the slide
+    justify-content: center;
+    align-items: center;
   }
 
   img {
-    width: 100%; // Make images responsive
-    max-width: 325px; // Set a max-width for the image size to prevent oversized images
-    height: auto; // Maintain the aspect ratio
+    width: 100%;
+    max-width: 325px;
+    height: auto;
     object-fit: cover;
     margin: auto;
     padding: 7px;
@@ -86,5 +87,61 @@
   .swiper-button-next svg {
     width: 60px;
     height: 60px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .slider_container {
+    max-width: 90%;
+  }
+
+  img {
+    max-width: 280px;
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .p1 {
+    font-size: 45px;
+    line-height: 55px;
+  }
+
+  .slider_container {
+    max-width: 100%;
+  }
+
+  img {
+    max-width: 250px;
+    margin-left: 0;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    padding: 10px;
+  }
+
+  .swiper-button-prev svg,
+  .swiper-button-next svg {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media (max-width: 480px) {
+  .p1 {
+    font-size: 35px;
+    line-height: 45px;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    padding: 8px;
+  }
+
+  .swiper-button-prev svg,
+  .swiper-button-next svg {
+    width: 40px;
+    height: 40px;
   }
 }
