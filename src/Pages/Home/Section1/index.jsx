@@ -9,7 +9,7 @@ import styles from "./style.module.scss";
 import img from "../../../Components/Images/shop1.png";
 
 const Section1 = () => {
-  const swiperRef = useRef(null); // Create a ref for the Swiper instance
+  const swiperRef = useRef(null);
 
   return (
     <section className={styles.section}>
@@ -21,7 +21,7 @@ const Section1 = () => {
 
         <div className={styles.slider_container}>
           <Swiper
-            ref={swiperRef} // Attach the swiperRef to the Swiper instance
+            ref={swiperRef}
             effect={"coverflow"}
             grabCursor={true}
             centeredSlides={true}
@@ -36,8 +36,8 @@ const Section1 = () => {
             }}
             modules={[EffectCoverflow, Navigation]}
             navigation={{
-              nextEl: ".swiper-button-next", // Target custom next button
-              prevEl: ".swiper-button-prev", // Target custom prev button
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
               clickable: true,
             }}
           >
@@ -73,17 +73,16 @@ const Section1 = () => {
             </SwiperSlide>
           </Swiper>
 
-          {/* Custom navigation buttons */}
           <div className={styles.slider_controller}>
             <div
               className={`${styles.swiper_button_prev} swiper-button-prev`}
-              onClick={() => swiperRef.current.swiper.slidePrev()} // Add onClick to navigate to the previous slide
+              onClick={() => swiperRef.current.swiper.slidePrev()}
             >
               <ArrowLeft size={40} color="black" />{" "}
             </div>
             <div
               className={`${styles.swiper_button_next} swiper-button-next`}
-              onClick={() => swiperRef.current.swiper.slideNext()} // Add onClick to navigate to the next slide
+              onClick={() => swiperRef.current.swiper.slideNext()}
             >
               <ArrowRight size={40} color="black" />{" "}
             </div>

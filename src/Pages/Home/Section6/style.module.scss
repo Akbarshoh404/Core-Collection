@@ -1,4 +1,90 @@
-.section{
-    width: 100%;
-    height: 100vh;
+.section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center; // Center the entire section horizontally
+  align-items: center; // Center the entire section vertically
+}
+
+.container {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.p1 {
+  font-family: Fraunces;
+  font-size: 60px;
+  font-weight: 350;
+  line-height: 73.98px;
+  text-align: center;
+}
+
+// Slider container
+.slider_container {
+  width: 100%; // Make the container take up full width
+  max-width: 1200px; // Optional: Set a maximum width for the carousel
+  margin: auto;
+  position: relative;
+
+  .swiper-wrapper {
+    display: flex;
+    justify-content: center; // Center the slides inside the wrapper
+  }
+
+  .swiper-slide {
+    display: flex;
+    justify-content: center; // Center the content inside each slide
+    align-items: center; // Center the images vertically within the slide
+  }
+
+  img {
+    width: 100%; // Make images responsive
+    max-width: 325px; // Set a max-width for the image size to prevent oversized images
+    height: auto; // Maintain the aspect ratio
+    object-fit: cover;
+    margin: auto;
+    padding: 7px;
+    border: 2px solid black;
+    margin-left: 35px;
+  }
+
+  .slider_controller {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    z-index: 10;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 12px;
+    transition: transform 0.3s ease;
+    color: black;
+  }
+
+  .swiper-button-prev:hover,
+  .swiper-button-next:hover {
+    transform: scale(1.2);
+  }
+
+  .swiper-button-prev svg,
+  .swiper-button-next svg {
+    width: 60px;
+    height: 60px;
+  }
 }
