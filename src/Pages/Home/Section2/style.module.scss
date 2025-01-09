@@ -9,14 +9,41 @@
 
 .container {
   width: 95%;
+  height: 100%;
   margin: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img{
+    width: 40%;
+  }
 }
 
 .texts {
   width: 100%;
 
   font-family: Fraunces;
-  font-size: 80px;
+  font-size: 70px;
   font-weight: 350;
   line-height: 98.64px;
+
+  span{
+    color: white;
+  }
+}
+
+.p2{
+  position: relative;
+  left: 300px;
+}
+
+.p3{
+  color: #565656;
+}
+
+.p4{
+  position: relative;
+  left: 260px;
 }
