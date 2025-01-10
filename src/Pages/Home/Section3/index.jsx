@@ -2,7 +2,7 @@ import React from "react";
 
 import styles from "./style.module.scss";
 
-import img1 from "../../../Components/Images/WinterAutumnCollection8.png";
+import img1 from "../../../Data/Spring/14.png";
 import img2 from "../../../Components/Images/unique1.jpg";
 import img3 from "../../../Components/Images/unique2.jpg";
 

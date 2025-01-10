@@ -7,6 +7,7 @@ import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
+import i18next from "i18next";
 
 import { useTranslation } from "react-i18next";
 
@@ -19,6 +20,8 @@ function Navbar() {
   const changelanguage = (language) => {
     i18n.changeLanguage(language);
   };
+
+  i18next.reloadResources();
 
   const [age, setAge] = React.useState("");
 
