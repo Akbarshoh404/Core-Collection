@@ -3,7 +3,10 @@ import styles from "./styles.module.scss";
 import locationIcon from "../../../Components/Icons/Location.png";
 import phoneIcon from "../../../Components/Icons/Call.png";
 
+import { useTranslation } from "react-i18next";
+
 const Section1 = () => {
+  const { t, i18n } = useTranslation();
   const contacts = [
     {
       location: "Buyuk Ipak Yuli Street, 58",
@@ -50,7 +53,7 @@ const Section1 = () => {
 
   return (
     <div className={styles.section}>
-      <p className={styles.p1}>OUR CONTACT NUMBERS</p>
+      <p className={styles.p1}>{t("numbers")}</p>
       <div className={styles.container}>
         {contacts.map((item, index) => (
           <div key={index} className={styles.card}>

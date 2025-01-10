@@ -2,14 +2,16 @@ import React from "react";
 
 import styles from "./style.module.scss";
 
+import { useTranslation } from "react-i18next";
+
 const Header = () => {
+  const { t, i18n } = useTranslation();
   return (
     <>
       <header className={styles.header}>
         <div className={styles.container}>
           <p>
-            Have questions or need style advice? We're here to help you discover
-            the perfect look!
+            {t("sitata5")}
           </p>
         </div>
       </header>
