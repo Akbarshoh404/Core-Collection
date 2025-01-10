@@ -80,9 +80,13 @@
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 400px) {
   .social {
     flex-direction: column;
     gap: 10px;
+  }
+
+  .p1{
+    font-size: 28px;
   }
 }

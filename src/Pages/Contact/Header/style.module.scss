@@ -16,9 +16,9 @@
   p {
     width: 85%;
     font-family: Fraunces;
-    font-size: 80px;
+    font-size: 70px;
     font-weight: 350;
-    line-height: 98.64px;
+    line-height: 80px;
     text-align: center;
   }
 }
@@ -26,28 +26,37 @@
 @media (max-width: 1000px) {
   .container {
     p {
-      width: 90%;
-      font-size: 60px;
+      width: 95%;
+      font-size: 50px;
       line-height: 70px;
     }
   }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 600px) {
   .container {
     p {
       width: 90%;
-      font-size: 45px;
+      font-size: 35px;
       line-height: 60px;
     }
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 450px) {
   .container {
     p {
       font-size: 35px;
       line-height: 50px;
+    }
+  }
+}
+
+@media (max-width: 385px) {
+  .container {
+    p {
+      font-size: 30px;
+      line-height: 45px;
     }
   }
 }
