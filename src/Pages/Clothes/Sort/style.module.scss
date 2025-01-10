@@ -29,10 +29,10 @@
 .clothes-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 60px;
   padding-top: 30px;
   padding-bottom: 30px;
-  width: 95%;
+  width: 90%;
   margin: auto;
 }
 
@@ -45,7 +45,7 @@
   border-radius: 10px;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
+  background-color: #fcf6f3;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 
   &:hover {
@@ -69,16 +69,24 @@
     }
 
     .clothes-names {
-      margin-top: 10px;
+      height: 120px;
       font-size: 14px;
       color: #555;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
 
       p {
-        margin: 5px 0;
-        font-weight: 400;
+        font-family: Roboto;
+        font-size: 20px;
+        color: black;
 
-        &:last-child {
-          margin-bottom: 0;
+        display: flex;
+        justify-content: space-between;
+
+        span {
+          font-weight: 600;
         }
       }
     }
@@ -87,13 +95,21 @@
 
 /* Responsive Design */
 
+@media (max-width: 1250px) {
+  .clothes-names {
+    p {
+      font-size: 18px !important;
+    }
+  }
+}
+
 @media (max-width: 1000px) {
   .sort-option {
     font-size: 16px !important;
     align-items: center;
   }
 
-  .sort-container{
+  .sort-container {
     gap: 15px;
   }
 }
@@ -110,6 +126,12 @@
   .clothes-item {
     width: 100%; /* Ensure it takes up full width of grid item */
     padding: 15px;
+  }
+
+  .sort-container {
+    flex-wrap: wrap;
+    height: 200px;
+    gap: 15px;
   }
 }
 
@@ -136,5 +158,15 @@
     .clothes-names {
       font-size: 12px;
     }
+  }
+
+  .sort-container {
+    height: 250px;
+  }
+}
+
+@media (max-width: 300px) {
+  .sort-container {
+    height: 300px;
   }
 }

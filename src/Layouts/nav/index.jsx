@@ -63,7 +63,7 @@ function Navbar() {
             <MenuItem value={20} onClick={() => changelanguage("en")}>
               English
             </MenuItem>
-            <MenuItem value={20} onClick={() => changelanguage("ru")}>
+            <MenuItem value={30} onClick={() => changelanguage("ru")}>
               Russian
             </MenuItem>
           </Select>
@@ -113,7 +113,7 @@ function Navbar() {
               <MenuItem value={20} onClick={() => changelanguage("en")}>
                 English
               </MenuItem>
-              <MenuItem value={20} onClick={() => changelanguage("ru")}>
+              <MenuItem value={30} onClick={() => changelanguage("ru")}>
                 Russian
               </MenuItem>
             </Select>
