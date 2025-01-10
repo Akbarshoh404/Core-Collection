@@ -6,7 +6,10 @@ import img1 from "../../../Components/Images/WinterAutumnCollection8.png";
 import img2 from "../../../Components/Images/unique1.jpg";
 import img3 from "../../../Components/Images/unique2.jpg";
 
+import { useTranslation } from "react-i18next";
+
 const Section3 = () => {
+  const { t, i18n } = useTranslation();
   return (
     <>
       <div className={styles.section}>
@@ -15,10 +18,10 @@ const Section3 = () => {
 
           <div className={styles.right}>
             <div className={styles.texts}>
-              <p className={styles.p1}>the SPRING/SUMMER</p>
+              <p className={styles.p1}>{t("c5")}</p>
 
               <div>
-                <p className={styles.p2}>CORE COLLECTION</p>
+                <p className={styles.p2}>{t("c6")}</p>
               </div>
             </div>
 

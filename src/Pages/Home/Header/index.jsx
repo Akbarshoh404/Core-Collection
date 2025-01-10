@@ -5,7 +5,10 @@ import woman1 from "../../../Components/Images/woman1.png";
 import woman2 from "../../../Components/Images/woman2.png";
 import woman3 from "../../../Components/Images/woman3.png";
 
+import { useTranslation } from "react-i18next";
+
 const Header = () => {
+  const { t, i18n } = useTranslation();
   return (
     <header className={styles.header}>
       <div className={styles.container}>
@@ -21,7 +24,7 @@ const Header = () => {
           <img src={woman3} alt="Small 2" className={styles.imageSmall} />
 
           <p className={styles.p1}>
-            Clothes won't change the world, The women who wear them will.
+            {t("sitata1")}
           </p>
 
           <p className={styles.p2}>— Anne Klein — </p>

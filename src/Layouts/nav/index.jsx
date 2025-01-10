@@ -29,10 +29,18 @@ function Navbar() {
   return (
     <nav className={styles.navbar}>
       <div className={styles.navLinks}>
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/clothes">Clothes</Link>
-        <Link to="/contact">Contact</Link>
+        <Link to="/" onClick={toggleDrawer}>
+          {t("home")}
+        </Link>
+        <Link to="/about" onClick={toggleDrawer}>
+          {t("about")}
+        </Link>
+        <Link to="/clothes" onClick={toggleDrawer}>
+          {t("clothes")}
+        </Link>
+        <Link to="/contact" onClick={toggleDrawer}>
+          {t("contact")}
+        </Link>
       </div>
 
       <img src={logo} alt="logo" className={styles.logo} />
@@ -40,7 +48,7 @@ function Navbar() {
       <div className={styles.icons}>
         <FormControl className={styles.dropdown}>
           <InputLabel id="demo-simple-select-label">
-            {t("drop_text")}{" "}
+            {t("drop_text")}
           </InputLabel>
           <Select
             labelId="demo-simple-select-label"
@@ -49,7 +57,7 @@ function Navbar() {
             label="Age"
             onChange={handleChange}
           >
-            <MenuItem value={10} onClick={() => changelanguage("ru")}>
+            <MenuItem value={10} onClick={() => changelanguage("uz")}>
               Uzbek
             </MenuItem>
             <MenuItem value={20} onClick={() => changelanguage("en")}>
@@ -76,16 +84,16 @@ function Navbar() {
       >
         <div className={styles.drawerContent}>
           <Link to="/" onClick={toggleDrawer}>
-            Home
+            {t("home")}
           </Link>
           <Link to="/about" onClick={toggleDrawer}>
-            About
+            {t("about")}
           </Link>
           <Link to="/clothes" onClick={toggleDrawer}>
-            Clothes
+            {t("clothes")}
           </Link>
           <Link to="/contact" onClick={toggleDrawer}>
-            Contact
+            {t("contact")}
           </Link>
 
           <FormControl className={styles.dropdown}>

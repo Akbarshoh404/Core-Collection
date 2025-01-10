@@ -25,13 +25,17 @@ import img16 from "../../../Components/Images/NewArrival16.png";
 import img17 from "../../../Components/Images/NewArrival17.png";
 import img18 from "../../../Components/Images/NewArrival18.png";
 
+import { useTranslation } from "react-i18next";
+
 const Section6 = () => {
   const swiperRef = useRef(null);
+
+  const { t, i18n } = useTranslation();
 
   return (
     <div className={styles.section}>
       <div className={styles.container}>
-        <p className={styles.p1}>NEW ARRIVALS</p>
+        <p className={styles.p1}>{t("arrival")}</p>
 
         <div className={styles.slider_container}>
           <Swiper

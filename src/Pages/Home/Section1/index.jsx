@@ -14,14 +14,17 @@ import img5 from "../../../Components/Images/HighLight5.png";
 import img6 from "../../../Components/Images/HighLight6.png";
 import img7 from "../../../Components/Images/HighLight7.png";
 
+import { useTranslation } from "react-i18next";
+
 const Section1 = () => {
   const swiperRef = useRef(null);
+  const { t, i18n } = useTranslation();
 
   return (
     <section className={styles.section}>
       <div className={styles.container}>
         <div className={styles.texts}>
-          <p className={styles.p1}>HIGHLIGHTS</p>
+          <p className={styles.p1}>{t("p1")}</p>
           <p className={styles.p2}>2025</p>
         </div>
 

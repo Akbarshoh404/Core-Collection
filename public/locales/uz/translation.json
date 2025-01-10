@@ -1,3 +1,28 @@
 {
-    "drop_text": "Til"
+  "drop_text": "Til",
+
+  "home": "Asosiy sahifa",
+  "about": "Biz haqimizda",
+  "clothes": "Kiymalar",
+  "contact": "Aloqa",
+
+  "sitata1": "Kiyim dunyoni o'zgartirmaydi, uni kiygan ayollar o’zgartiradi.",
+
+  "p1": "MASHHUR LIBOSLAR",
+
+  "c1": "— KUZ KOLLEKSIYASI",
+  "c2": "— QISH KOLLEKSIYASI",
+  "c3": "— BAHOR KOLLEKSIYASI",
+  "c4": "— YOZ KOLLEKSIYASI",
+
+  "c5": "BAHOR/YOZ",
+  "c6": "ASOSIY KOLLEKSIYA",
+
+  "sitata2": "Uslub va moda o'rtasidagi farq — sifat.",
+
+  "c7": "QISH/KUZ",
+
+  "arrival": "YANGI LIBOSLAR",
+
+  "join": "IJTIMOIY TARMOQLARIMIZGA QO'SHILING"
 }

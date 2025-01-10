@@ -5,7 +5,10 @@ import styles from "./style.module.scss";
 import instagram from "../../Components/Icons/Instagram.png";
 import telegram from "../../Components/Icons/Telegram.png";
 
+import { useTranslation } from "react-i18next";
+
 const Footer = () => {
+  const { t, i18n } = useTranslation();
   const handleNavigation = (url) => {
     window.open(url, "_blank", "noopener,noreferrer");
   };
@@ -13,7 +16,7 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
-        <p className={styles.p1}>JOIN OUR NEWSLETTER</p>
+        <p className={styles.p1}>{t("join")}</p>
 
         <div className={styles.social}>
           <div

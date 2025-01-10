@@ -1,3 +1,28 @@
 {
-    "drop_text": "Lang"
+  "drop_text": "Language",
+
+  "home": "Home",
+  "about": "About",
+  "clothes": "Clothes",
+  "contact": "Contact",
+
+  "sitata1": "Clothes won't change the world, The women who wear them will.",
+
+  "p1": "HIGHLIGHTS",
+
+  "c1": "— COLLECTION for AUTUMN",
+  "c2": "— COLLECTION for WINTER",
+  "c3": "— COLLECTION for SPRING",
+  "c4": "— COLLECTION for SUMMER",
+
+  "c5": "the SPRING/SUMMER",
+  "c6": "CORE COLLECTION",
+
+  "sitata2": "The difference between style and fashion is quality.",
+
+  "c7": "the AUTUMN/WINTER",
+
+  "arrival": "NEW ARRIVALS",
+
+  "join": "JOIN OUR NEWSLETTER"
 }
