@@ -1,28 +1,25 @@
 {
   "drop_text": "Til",
-
   "home": "Asosiy sahifa",
   "about": "Biz haqimizda",
   "clothes": "Kiymalar",
   "contact": "Aloqa",
-
   "sitata1": "Kiyim dunyoni o'zgartirmaydi, uni kiygan ayollar o’zgartiradi.",
-
   "p1": "MASHHUR LIBOSLAR",
-
   "c1": "— KUZ KOLLEKSIYASI",
   "c2": "— QISH KOLLEKSIYASI",
   "c3": "— BAHOR KOLLEKSIYASI",
   "c4": "— YOZ KOLLEKSIYASI",
-
   "c5": "BAHOR/YOZ",
   "c6": "ASOSIY KOLLEKSIYA",
-
   "sitata2": "Uslub va moda o'rtasidagi farq — sifat.",
-
   "c7": "QISH/KUZ",
-
   "arrival": "YANGI LIBOSLAR",
+  "join": "IJTIMOIY TARMOQLARIMIZGA QO'SHILING",
 
-  "join": "IJTIMOIY TARMOQLARIMIZGA QO'SHILING"
+  "sitata3": "Core Collection’ga xush kelibsiz, bu yerda uslub sifat bilan uchrashadi!",
+  "longp1": "Ikki yildan ortiq vaqt davomida biz Oʻzbekiston bozorida sifatli va zamonaviy kiyimlarni taqdim etib kelmoqdamiz. Toshkent va Samarqanddagi filiallarimiz orqali siz koreys modasining nozikligi va oʻziga xos uslubini his qilishingiz mumkin. Kiyimlarimiz Koreyadan eksport qilinadi va har bir kolleksiyamiz puxta oʻylangan, zamonaviy va oʻzgacha uslubda yaratilgan.",
+  "longp2": "Core Collection doʻkonlarida siz nafaqat kundalik hayot uchun qulay kiyimlarni, balki maxsus tadbirlar uchun ham mos keladigan ajoyib obrazlarni topishingiz mumkin. Biz har bir ayol oʻziga xosligini namoyon eta oladigan kiyimlarni yaratish va taqdim etishga intilamiz. Toshkent yoki Samarqanddagi filiallarimizga tashrif buyuring va oʻz uslubingizni toping!",
+  "sitata4": "Core Collection – Koreya modasining Oʻzbekistondagi manzili.",
+  "branch": "BIZNING FILIALLARIMIZ"
 }

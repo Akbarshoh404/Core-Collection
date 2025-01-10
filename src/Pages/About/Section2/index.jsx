@@ -1,14 +1,15 @@
 import React from "react";
 import styles from "./style.module.scss";
 
+import { useTranslation } from "react-i18next";
+
 const Section2 = () => {
+  const { t, i18n } = useTranslation();
   return (
     <>
       <header className={styles.header}>
         <div className={styles.container}>
-          <p>
-            Core Collection – Your Destination for Korean Fashion in Uzbekistan.
-          </p>
+          <p>{t("sitata4")}</p>
         </div>
       </header>
     </>

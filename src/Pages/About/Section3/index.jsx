@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 import styles from "./style.module.scss";
 import img from "../../../Components/Icons/Location.png";
 
+import { useTranslation } from "react-i18next";
+
 const locations = [
   {
     address: "Buyuk Ipak Yuli Street, 58",
@@ -31,13 +33,14 @@ const locations = [
 ];
 
 const Section3 = () => {
+  const { t, i18n } = useTranslation();
   const handleNavigation = (url) => {
     window.open(url, "_blank");
   };
 
   return (
     <div className={styles.section}>
-      <p className={styles.p1}>OUR LOCATIONS</p>
+      <p className={styles.p1}>{t("branch")}</p>
       <div className={styles.container}>
         {locations.map((location, index) => (
           <div

@@ -107,7 +107,7 @@ function Navbar() {
               label="Age"
               onChange={handleChange}
             >
-              <MenuItem value={10} onClick={() => changelanguage("ru")}>
+              <MenuItem value={10} onClick={() => changelanguage("uz")}>
                 Uzbek
               </MenuItem>
               <MenuItem value={20} onClick={() => changelanguage("en")}>
