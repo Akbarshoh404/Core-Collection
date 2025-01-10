@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import styles from "./style.module.scss";
 
+import { Link } from "react-router-dom";
+
 import logo from "../../Components/Icons/logo.png";
 
 function Navbar() {
@@ -11,10 +13,18 @@ function Navbar() {
   return (
     <nav className={styles.navbar}>
       <div className={styles.navLinks}>
-        <a href="#home">HOME</a>
-        <a href="#services">CLOTHES</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+        <Link to="/">
+          Home
+        </Link>
+        <Link to="/about">
+          About
+        </Link>
+        <Link to="/clothes">
+          Clothes
+        </Link>
+        <Link to="/contact">
+          Contact
+        </Link>
       </div>
 
       <img src={logo} alt="logo" className={styles.logo} />
@@ -34,18 +44,18 @@ function Navbar() {
         onClick={toggleDrawer}
       >
         <div className={styles.drawerContent}>
-          <a href="#home" onClick={toggleDrawer}>
+          <Link to="/" onClick={toggleDrawer}>
             Home
-          </a>
-          <a href="#about" onClick={toggleDrawer}>
+          </Link>
+          <Link to="/about" onClick={toggleDrawer}>
             About
-          </a>
-          <a href="#services" onClick={toggleDrawer}>
+          </Link>
+          <Link to="/clothes" onClick={toggleDrawer}>
             Clothes
-          </a>
-          <a href="#contact" onClick={toggleDrawer}>
+          </Link>
+          <Link to="/contact" onClick={toggleDrawer}>
             Contact
-          </a>
+          </Link>
         </div>
       </div>
     </nav>

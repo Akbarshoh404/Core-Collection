@@ -1,0 +1,56 @@
+.section {
+  width: 100%;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 125px;
+
+  p {
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 58px;
+    text-align: left;
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    p {
+      font-size: 30px;
+      line-height: 50px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .container {
+    gap: 75px;
+    p {
+      font-size: 25px;
+      line-height: 40px;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+    .container {
+      gap: 75px;
+      p {
+        font-size: 22px;
+        line-height: 35px;
+      }
+    }
+  }

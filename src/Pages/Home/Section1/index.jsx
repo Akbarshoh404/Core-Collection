@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow, Navigation } from "swiper/modules";
-import { ArrowLeft, ArrowRight } from "phosphor-react";
 import "swiper/css";
 import "swiper/css/navigation";
 
@@ -48,7 +47,7 @@ const Section1 = () => {
               clickable: true,
             }}
           >
-            <SwiperSlide>
+            <SwiperSlide className={styles.slider}>
               <div className={styles.slide}>
                 <img src={img1} alt="highlight1" />
                 <div className={styles.slide_texts}>
@@ -194,13 +193,29 @@ const Section1 = () => {
               className={`${styles.swiper_button_prev} swiper-button-prev`}
               onClick={() => swiperRef.current.swiper.slidePrev()}
             >
-              <ArrowLeft size={40} color="black" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="60"
+                height="20"
+                viewBox="0 0 60 20"
+                fill="black"
+              >
+                <path d="M20 0 L0 10 L20 20 Z" />
+              </svg>
             </div>
             <div
               className={`${styles.swiper_button_next} swiper-button-next`}
               onClick={() => swiperRef.current.swiper.slideNext()}
             >
-              <ArrowRight size={40} color="black" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="60"
+                height="20"
+                viewBox="0 0 60 20"
+                fill="black"
+              >
+                <path d="M40 0 L60 10 L40 20 Z" />
+              </svg>
             </div>
           </div>
         </div>

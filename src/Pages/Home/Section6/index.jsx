@@ -40,13 +40,17 @@ const Section6 = () => {
             grabCursor={true}
             centeredSlides={true}
             loop={true}
-            slidesPerView={3}
+            slidesPerView={"auto"}
             coverflowEffect={{
               rotate: 0,
               stretch: -75,
               depth: 250,
               modifier: 3.5,
               slideShadows: false,
+            }}
+            breakpoints={{
+              480: { slidesPerView: 1 },
+              1024: { slidesPerView: 3 },
             }}
             modules={[EffectCoverflow, Navigation]}
             navigation={{
@@ -55,75 +59,45 @@ const Section6 = () => {
               clickable: true,
             }}
           >
-            <SwiperSlide>
-              <img src={img1} alt="New Arrival 1" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={img2} alt="New Arrival 2" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={img3} alt="New Arrival 3" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={img4} alt="New Arrival 4" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={img5} alt="New Arrival 5" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={img6} alt="New Arrival 6" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={img7} alt="New Arrival 7" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={img8} alt="New Arrival 8" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={img9} alt="New Arrival 9" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={img10} alt="New Arrival 10" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={img11} alt="New Arrival 11" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={img12} alt="New Arrival 12" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={img13} alt="New Arrival 13" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={img14} alt="New Arrival 14" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={img15} alt="New Arrival 15" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={img16} alt="New Arrival 16" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={img17} alt="New Arrival 17" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={img18} alt="New Arrival 18" />
-            </SwiperSlide>
+            {[
+              img1,
+              img2,
+              img3,
+              img4,
+              img5,
+              img6,
+              img7,
+              img8,
+              img9,
+              img10,
+              img11,
+              img12,
+              img13,
+              img14,
+              img15,
+              img16,
+              img17,
+              img18,
+            ].map((img, index) => (
+              <SwiperSlide key={index}>
+                <img
+                  src={img}
+                  alt={`New Arrival ${index + 1}`}
+                  className={styles.img}
+                />
+              </SwiperSlide>
+            ))}
           </Swiper>
 
           <div className={styles.slider_controller}>
             <div
               className={`${styles.swiper_button_prev} swiper-button-prev`}
               onClick={() => swiperRef.current.swiper.slidePrev()}
-            >
-              <ArrowLeft size={60} color="black" />
-            </div>
+            ></div>
             <div
               className={`${styles.swiper_button_next} swiper-button-next`}
               onClick={() => swiperRef.current.swiper.slideNext()}
-            >
-              <ArrowRight size={60} color="black" />
-            </div>
+            ></div>
           </div>
         </div>
       </div>

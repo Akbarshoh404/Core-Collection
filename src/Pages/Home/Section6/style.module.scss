@@ -4,6 +4,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .container {
@@ -16,14 +18,12 @@
 }
 
 .p1 {
-  font-family: Fraunces;
+  font-family: Fraunces, sans-serif;
   font-size: 60px;
   font-weight: 350;
-  line-height: 73.98px;
+  line-height: 74px;
   text-align: center;
 }
-
-// Slider
 
 .slider_container {
   width: 100%;
@@ -42,7 +42,7 @@
     align-items: center;
   }
 
-  img {
+  .img {
     width: 100%;
     max-width: 325px;
     height: auto;
@@ -50,7 +50,6 @@
     margin: auto;
     padding: 7px;
     border: 2px solid black;
-    margin-left: 35px;
   }
 
   .slider_controller {
@@ -75,7 +74,6 @@
     border-radius: 50%;
     padding: 12px;
     transition: transform 0.3s ease;
-    color: black;
   }
 
   .swiper-button-prev:hover,
@@ -90,30 +88,30 @@
   }
 }
 
+// Responsive Styles
+
 @media (max-width: 1200px) {
   .slider_container {
     max-width: 90%;
   }
 
-  img {
+  .img {
     max-width: 280px;
-    margin-left: 20px;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .p1 {
-    font-size: 45px;
-    line-height: 55px;
+    font-size: 50px;
+    line-height: 60px;
   }
 
   .slider_container {
     max-width: 100%;
   }
 
-  img {
+  .img {
     max-width: 250px;
-    margin-left: 0;
   }
 
   .swiper-button-prev,
@@ -123,15 +121,19 @@
 
   .swiper-button-prev svg,
   .swiper-button-next svg {
-    width: 45px;
-    height: 45px;
+    width: 50px;
+    height: 50px;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .p1 {
-    font-size: 35px;
-    line-height: 45px;
+    font-size: 45px;
+    line-height: 55px;
+  }
+
+  .img {
+    max-width: 220px;
   }
 
   .swiper-button-prev,
@@ -143,5 +145,27 @@
   .swiper-button-next svg {
     width: 40px;
     height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .p1 {
+    font-size: 35px;
+    line-height: 45px;
+  }
+
+  .img {
+    max-width: 180px;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    padding: 6px;
+  }
+
+  .swiper-button-prev svg,
+  .swiper-button-next svg {
+    width: 35px;
+    height: 35px;
   }
 }
