@@ -22,6 +22,7 @@ const Section3 = () => {
 
               <div>
                 <p className={styles.p2}>{t("c6")}</p>
+                <p className={styles.p3}>2025</p>
               </div>
             </div>
 
