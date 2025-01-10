@@ -21,7 +21,6 @@
   font-family: Fraunces;
   font-size: 66px;
   font-weight: 350;
-  // line-height: 73.98px;
   text-align: center;
 }
 
@@ -43,44 +42,45 @@
   align-items: center;
   gap: 50px;
 
-  div{
+  div {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
+    cursor: pointer;
   }
 }
 
 @media (max-width: 850px) {
-  .p1{
+  .p1 {
     font-size: 50px;
   }
 }
 
 @media (max-width: 650px) {
-  .p1{
+  .p1 {
     font-size: 40px;
   }
 
-  .social{
+  .social {
     font-size: 20px;
     gap: 30px;
   }
 }
 
 @media (max-width: 550px) {
-  .p1{
+  .p1 {
     font-size: 35px;
   }
 
-  .social{
+  .social {
     font-size: 18px;
     gap: 20px;
   }
 }
 
 @media (max-width: 350px) {
-  .social{
+  .social {
     flex-direction: column;
     gap: 10px;
   }
