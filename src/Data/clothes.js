@@ -1,8 +1,8 @@
 export const data = [
   {
     id: 1,
-    img: "",
-    type: "",
+    img: "../../../Components/images/Highlight1.png",
+    type: "highlights",
     name1: "",
     price1: "",
     name2: "",

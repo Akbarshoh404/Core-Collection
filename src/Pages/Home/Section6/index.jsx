@@ -81,11 +81,13 @@ const Section6 = () => {
               img18,
             ].map((img, index) => (
               <SwiperSlide key={index}>
-                <img
-                  src={img}
-                  alt={`New Arrival ${index + 1}`}
-                  className={styles.img}
-                />
+                <div className={styles.slide}>
+                  <img
+                    src={img}
+                    alt={`New Arrival ${index + 1}`}
+                    className={styles.img}
+                  />
+                </div>
               </SwiperSlide>
             ))}
           </Swiper>

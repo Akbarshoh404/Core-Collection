@@ -73,12 +73,59 @@
       padding: 0px;
     }
 
-    .p1{
+    .p1 {
       padding-left: 30%;
     }
 
-    .p5{
+    .p5 {
       padding-right: 30%;
+    }
+  }
+}
+
+@media (max-width: 730px) {
+  .p1 {
+    padding: 0px !important;
+  }
+
+  .p5 {
+    padding: 0px !important;
+  }
+}
+
+@media (max-width: 530px) {
+  .texts {
+    p {
+      font-size: 28px;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .section {
+    height: 80vh;
+  }
+
+  .texts {
+    p {
+      font-size: 24px;
+      line-height: 45px;
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .texts {
+    p {
+      font-size: 20px;
+    }
+  }
+}
+
+@media (max-width: 300px) {
+  .texts {
+    p {
+      font-size: 18px;
     }
   }
 }

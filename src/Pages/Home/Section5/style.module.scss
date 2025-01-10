@@ -112,16 +112,32 @@
   }
 
   .section {
-    height: 150vh;
+    height: 120vh;
   }
 
   .images {
     flex-direction: column-reverse;
-    height: 40%;
+    height: 400px;
     width: 100%;
+    margin-top: 150px;
 
     img {
       height: 100%;
     }
+  }
+}
+
+@media (max-width: 400px) {
+  .section {
+    height: 105vh;
+  }
+  .images {
+    height: 350px;
+  }
+}
+
+@media (max-width: 340px) {
+  .images {
+    height: 300px;
   }
 }
