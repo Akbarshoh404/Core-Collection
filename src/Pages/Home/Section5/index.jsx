@@ -3,14 +3,8 @@ import React from "react";
 import styles from "./style.module.scss";
 
 import img1 from "../../../Components/Images/WinterAutumnCollection8.png";
-import img2 from "../../../Components/Images/WinterAutumnCollection2.png";
-import img3 from "../../../Components/Images/WinterAutumnCollection3.png";
-import img4 from "../../../Components/Images/WinterAutumnCollection4.png";
-import img5 from "../../../Components/Images/WinterAutumnCollection5.png";
-import img6 from "../../../Components/Images/WinterAutumnCollection6.png";
-import img7 from "../../../Components/Images/WinterAutumnCollection7.png";
-import img8 from "../../../Components/Images/WinterAutumnCollection1.png";
-import img9 from "../../../Components/Images/WinterAutumnCollection9.png";
+import img2 from "../../../Components/Images/unique3.jpg";
+import img3 from "../../../Components/Images/unique4.jpg";
 
 const Section5 = () => {
   return (
@@ -25,12 +19,12 @@ const Section5 = () => {
 
               <div>
                 <p className={styles.p2}>CORE COLLECTION</p>
-                <p className={styles.p3}>2025</p>
               </div>
             </div>
 
             <div className={styles.images}>
-              asd
+              <img src={img2} alt="" />
+              <img src={img3} alt="" />
             </div>
           </div>
         </div>

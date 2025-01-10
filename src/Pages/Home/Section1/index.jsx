@@ -32,7 +32,12 @@ const Section1 = () => {
             grabCursor={true}
             centeredSlides={true}
             loop={true}
-            slidesPerView={2.75}
+            slidesPerView={"auto"}
+            breakpoints={{
+              640: { slidesPerView: 1 },
+              768: { slidesPerView: 1.5 },
+              1024: { slidesPerView: 3 },
+            }}
             coverflowEffect={{
               rotate: 0,
               stretch: -75,

@@ -10,10 +10,6 @@ const Header = () => {
     <header className={styles.header}>
       <div className={styles.container}>
         <div className={styles.imageColumn1}>
-          <pre className={styles.p3}>
-            DISCO<span>VER</span><br/>
-            YOUR  PERF<span>ECT</span><br/>
-            <span>S</span>T<span>YLE</span></pre>
           <img src={woman1} alt="Small 1" className={styles.imageSmall} />
         </div>
 

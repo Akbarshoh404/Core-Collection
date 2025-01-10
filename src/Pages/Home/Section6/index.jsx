@@ -41,16 +41,17 @@ const Section6 = () => {
             centeredSlides={true}
             loop={true}
             slidesPerView={"auto"}
+            breakpoints={{
+              640: { slidesPerView: 1 },
+              768: { slidesPerView: 1.5 },
+              1024: { slidesPerView: 3 },
+            }}
             coverflowEffect={{
               rotate: 0,
               stretch: -75,
               depth: 250,
               modifier: 3.5,
               slideShadows: false,
-            }}
-            breakpoints={{
-              480: { slidesPerView: 1 },
-              1024: { slidesPerView: 3 },
             }}
             modules={[EffectCoverflow, Navigation]}
             navigation={{

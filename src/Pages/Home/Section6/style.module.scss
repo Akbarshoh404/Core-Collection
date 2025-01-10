@@ -31,23 +31,9 @@
   margin: auto;
   position: relative;
 
-  .swiper-wrapper {
-    display: flex;
-    justify-content: center;
-  }
-
-  .swiper-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
   .img {
-    width: 100%;
-    max-width: 325px;
-    height: auto;
-    object-fit: cover;
-    margin: auto;
+    width: 300px;
+    margin: auto !important;
     padding: 7px;
     border: 2px solid black;
   }
@@ -107,11 +93,13 @@
   }
 
   .slider_container {
-    max-width: 100%;
+    width: 100%;
+    margin: auto;
   }
 
   .img {
-    max-width: 250px;
+    width: 350px !important;
+    margin: auto;
   }
 
   .swiper-button-prev,

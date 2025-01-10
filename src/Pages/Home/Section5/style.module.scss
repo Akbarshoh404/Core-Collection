@@ -49,17 +49,15 @@
 
 .p1 {
   font-family: Fraunces;
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 350;
-  line-height: 73.98px;
   text-align: left;
 }
 
 .p2 {
   font-family: Fraunces;
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 350;
-  line-height: 73.98px;
   text-align: left;
 }
 
@@ -72,5 +70,58 @@
 }
 
 .images {
-  height: 70%;
+  height: 60%;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    height: 100%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .p1 {
+    font-size: 40px;
+  }
+
+  .p2 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 900px) {
+  .bigImg {
+    display: none !important;
+  }
+
+  .right {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 550px) {
+  .p1 {
+    font-size: 25px;
+  }
+
+  .p2 {
+    font-size: 25px;
+  }
+
+  .section {
+    height: 150vh;
+  }
+
+  .images {
+    flex-direction: column-reverse;
+    height: 40%;
+    width: 100%;
+
+    img {
+      height: 100%;
+    }
+  }
 }

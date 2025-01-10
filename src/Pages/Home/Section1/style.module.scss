@@ -116,7 +116,7 @@
     margin: auto;
   }
 
-  .texts{
+  .texts {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -128,5 +128,37 @@
   .slider_container {
     width: 90%;
     margin: auto;
+  }
+}
+
+@media (max-width: 1150px) {
+  .slide_text1 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .slide {
+    width: 400px;
+    margin: auto;
+  }
+
+  .section {
+    margin-bottom: 100px;
+  }
+
+  .slider_container {
+    padding-top: 30px;
+  }
+}
+
+@media (max-width: 700px) {
+  .slide {
+    width: 350px;
+    margin: auto;
+  }
+
+  .p1{
+    font-size: 50px;
   }
 }
