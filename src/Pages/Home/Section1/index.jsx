@@ -96,7 +96,7 @@ const Section1 = () => {
                   </div>
                   <div className={styles.slide_text}>
                     <p className={styles.slide_text1}>
-                      HANDBAG WITHOUT DECORATIONS
+                      HANDBAG
                     </p>
                     <p className={styles.slide_text2}>179 000 SUM</p>
                   </div>

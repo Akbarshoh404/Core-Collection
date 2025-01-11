@@ -10,8 +10,11 @@ import Select from "@mui/material/Select";
 import i18next from "i18next";
 
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router";
 
 function Navbar() {
+  let navigate = useNavigate();
+  // window.location.reload()
   const [drawerOpen, setDrawerOpen] = useState(false);
 
   const toggleDrawer = () => setDrawerOpen(!drawerOpen);
@@ -32,17 +35,37 @@ function Navbar() {
   return (
     <nav className={styles.navbar}>
       <div className={styles.navLinks}>
-        <Link to="/" onClick={toggleDrawer}>
-          {t("home")}
+        <Link
+          to="/"
+          onClick={() => {
+            window.scrollTo({ top: 0, left: 0 });
+          }}
+        >
+          <p className={styles.a}>{t("home")}</p>
         </Link>
-        <Link to="/about" onClick={toggleDrawer}>
-          {t("about")}
+        <Link
+          to="/about"
+          onClick={() => {
+            window.scrollTo({ top: 0, left: 0 });
+          }}
+        >
+          <p className={styles.a}>{t("about")}</p>
         </Link>
-        <Link to="/clothes" onClick={toggleDrawer}>
-          {t("clothes")}
+        <Link
+          to="/clothes"
+          onClick={() => {
+            window.scrollTo({ top: 0, left: 0 });
+          }}
+        >
+          <p className={styles.a}>{t("clothes")}</p>
         </Link>
-        <Link to="/contact" onClick={toggleDrawer}>
-          {t("contact")}
+        <Link
+          to="/contact"
+          onClick={() => {
+            window.scrollTo({ top: 0, left: 0 });
+          }}
+        >
+          <p className={styles.a}>{t("contact")}</p>
         </Link>
       </div>
 

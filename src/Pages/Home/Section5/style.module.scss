@@ -70,14 +70,21 @@
 }
 
 .images {
-  height: 60%;
+  height: 70%;
   width: 100%;
 
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 20px;
   img {
     height: 100%;
+  }
+}
+
+@media (max-width: 1250px) {
+  .images {
+    height: 60%;
   }
 }
 

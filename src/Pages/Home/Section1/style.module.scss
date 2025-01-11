@@ -60,10 +60,11 @@
 
 .slide {
   width: 100%;
+  height: 490px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   padding: 10px;
   border: 2px solid black;
   gap: 10px;
@@ -128,6 +129,10 @@
   .slider_container {
     width: 90%;
     margin: auto;
+  }
+
+  .slide{
+    height: 520px;
   }
 }
 

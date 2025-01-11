@@ -1,3 +1,7 @@
+* {
+  text-decoration: none;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -19,22 +23,6 @@
     width: 100%;
     display: flex;
     gap: 2rem;
-
-    a {
-      font-family: Roboto Mono;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 26.38px;
-      text-align: left;
-      text-decoration-skip-ink: none;
-      color: black !important;
-      text-decoration: none;
-      transition: color 0.3s ease;
-
-      &:hover {
-        color: #00b4d8;
-      }
-    }
   }
 
   .hamburger {
@@ -52,6 +40,20 @@
       border-radius: 1px;
     }
   }
+}
+
+.a {
+  font-family: Roboto Mono;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26.38px;
+  color: black !important;
+  text-decoration: none !important;
+  transition: color 0.3s ease;
+}
+
+.a:focus{
+  text-decoration: underline !important;
 }
 
 .icons {
@@ -73,6 +75,8 @@
   overflow: hidden;
   transition: left 0.3s ease;
   z-index: 1000;
+
+  display: none;
 }
 
 .drawerOpen {
@@ -101,7 +105,7 @@
   width: 200px;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 950px) {
   .navbar {
     padding: 1rem 1rem;
   }
@@ -116,5 +120,9 @@
 
   .icons {
     display: none;
+  }
+
+  .drawer {
+    display: flex;
   }
 }
